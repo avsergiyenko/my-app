@@ -1,0 +1,633 @@
+/*--------------------Reset all default values-----------------------------------------------*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+/* img {
+  vertical-align: top;
+} */
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html,
+body {
+  height: 100vh;
+  font-size: 18px;
+  font-weight: normal; /* normal equal 400 */
+  font-family: "Changa", sans-serif;
+}
+
+/*--------------------------------Content Restrictions-------------------------------------------------------------*/
+
+.container {
+  max-width: 1036px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/*--------------------------------HEADER-------------------------------------------------------------------*/
+
+.header__container {
+  min-height: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header__container input {
+  font-family: inherit;
+  color: #ef552f;
+}
+
+.logo-link {
+  margin: 52px 43px 50px 0px;
+  font-size: 0px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.phone {
+  font-size: 24px;
+  font-family: inherit;
+  color: #ef552f;
+  margin: 72px 33px 30px 0px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #ef552f;
+  font-family: "Changa", sans-serif;
+  letter-spacing: 2px;
+}
+
+.contact-button {
+  color: #fff;
+  background: #ef552f;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 8px 21px;
+  margin: 72px 20px 49px 0px;
+}
+
+.fb-icon {
+  margin: 73px 15px 50px 0px;
+}
+
+.insta-icon {
+  margin: 72px 14px 50px 0px;
+}
+
+.language-bar {
+  margin-top: 25px;
+}
+
+.language-bar a {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.language-bar a:first-child {
+  padding: 7px 8px 7px 0px;
+  border-right: 1px solid #a1a1a1;
+}
+
+.language-bar a:last-child {
+  padding: 7px 0px 7px 8px;
+}
+
+/*-----------------------------------NAVBAR----------------------------------------*/
+
+.nav__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 65px;
+}
+
+.nav__container a {
+  color: #000;
+  font-size: 20px;
+  line-height: 37px;
+}
+
+/*---------------------------------WOOL PRODUCTS-----------------------------------*/
+
+.background {
+  background: url("./img/wool.png") no-repeat center center;
+  background-size: cover;
+}
+
+.wool-products {
+  display: flex;
+  flex-direction: column;
+}
+
+.wool-products h1 {
+  height: 66px;
+  font-size: 46px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 98px 0 11px 0;
+}
+
+.wool-products h2 {
+  font-size: 29px;
+  line-height: 53px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.order-button {
+  color: #fff;
+  background: #ef552f;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 14px 79px;
+  align-self: flex-end;
+  margin: 118px 190px 0 0;
+}
+
+.slider-buttons {
+  align-self: center;
+  margin: 293px 0 0 0;
+}
+
+.slider-buttons button {
+  height: 18px;
+  width: 18px;
+  background: #ef552f;
+  border-radius: 4px;
+}
+
+.slider-buttons button:nth-child(2) {
+  margin: 0 21px;
+}
+
+/*--------------------------------PORTFOLIO---------------------------------*/
+
+.portfolio h1 {
+  font-weight: bold;
+  font-size: 29px;
+  line-height: 53px;
+  color: #a2a1a1;
+  text-align: center;
+  margin: 76px 0 12px;
+}
+
+.portfolio-photos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portfolio-photos img {
+  border-color: #ef552f;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 3px 3px 60px 3px;
+  margin-bottom: -60px;
+}
+
+.portfolio-photos figcaption {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 121px 133px;
+}
+
+.portfolio-advantages {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.advantages-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 340px;
+}
+.advantages-card img {
+  margin-bottom: 30px;
+}
+
+.portfolio-advantages figcaption {
+  font-size: 24px;
+  line-height: 44px;
+}
+
+.highlighted-text {
+  color: #ef552f;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+/*----------------------------------------ABOUT----------------------------------------------*/
+
+.about h2 {
+  font-size: 29px;
+  font-weight: bold;
+  color: #ef552f;
+  text-align: center;
+  margin: 74px 0 40px 0;
+}
+
+.about-description {
+  display: flex;
+}
+
+.about-description p {
+  font-size: 19px;
+  margin: 0 11px 0 0;
+}
+
+.about-description span {
+  font-weight: 600;
+}
+
+.about-description img {
+  align-self: flex-start;
+}
+
+/*-----------------------------------WINTER COLLECTION---------------------------------*/
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ef552f;
+  min-height: 81px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin: 130px 0 38px 0;
+}
+
+.winter p {
+  font-size: 20px;
+  line-height: 37px;
+  color: #ef552f;
+}
+
+.winter-bolded {
+  font-weight: bold;
+  margin: 0 0 0 83px;
+}
+
+.winter h2 {
+  font-size: 29px;
+  font-weight: bold;
+  color: #ef552f;
+  text-align: center;
+  margin: 86px 0 20px 0;
+}
+
+.product-images img:nth-child(2) {
+  margin: 0 20px;
+}
+
+.winter .order-button {
+  margin: 44px 0 30px 0;
+}
+
+/*----------------------------------------SUMMER COLLECTION----------------------------------------*/
+
+.summer h2 {
+  font-size: 29px;
+  font-weight: bold;
+  color: #ef552f;
+  text-align: center;
+  margin: 86px 0 20px 0;
+}
+
+.summer p {
+  font-size: 20px;
+  color: #ef552f;
+  line-height: 37px;
+}
+
+.summer .order-button {
+  margin: 44px 0 30px 0;
+}
+
+/*-------------------------------------------REVIEWS-------------------------------------------------*/
+
+.reviews h2 {
+  font-size: 29px;
+  font-weight: bold;
+  color: #ef552f;
+  text-align: center;
+  margin: 149px 0 0 0;
+}
+
+.reviews__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 337px;
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.25);
+}
+
+.reviews p {
+  line-height: 33px;
+  margin: 55px 117px 81px 145px;
+}
+
+.reviews__slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews .slider-buttons {
+  margin: 42px 0 0 0;
+}
+
+.reviews .order-button {
+  padding: 15px 60px;
+  margin: 55px 0 0 0;
+}
+
+.reviews .wool-products {
+  flex-direction: unset;
+  justify-content: space-between;
+}
+
+.reviews .wool-products a {
+  color: #ef552f;
+  align-self: flex-end;
+}
+
+/*---------------------------------------BLOG---------------------------------------*/
+
+.blog__background {
+  background: #ef552f;
+  min-height: 848px;
+}
+
+.section-title {
+  font-size: 29px;
+  color: #ef552f;
+  font-weight: bold;
+  text-align: center;
+  margin: 120px 0 19px 0;
+}
+
+.outer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 848px;
+}
+
+.inner_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 801px;
+  max-width: 505px;
+  background: #fff;
+}
+
+.inner_container h3 {
+  align-self: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #ef552f;
+}
+
+.inner_container p {
+  font-size: 19px;
+  text-indent: 20px;
+  padding: 0 12px;
+}
+
+.inner_container a {
+  padding: 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+  align-self: flex-end;
+  color: #ef552f;
+}
+
+.blog__slider {
+  display: flex;
+  justify-content: center;
+}
+
+.blog__slider .slider-buttons {
+  margin: 65px 0 0 0;
+}
+
+/*----------------------------------------------ORDERING PROCESS------------------------------*/
+
+.upperContainer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.lowerContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.orderProcess h3 {
+  font-size: 36px;
+  color: #ef552f;
+  font-weight: 600;
+  margin: 116px 0 0 -35px;
+}
+
+.longArrow1 {
+  margin: 136px 47px 0 -20px;
+}
+
+.longArrow2 {
+  transform: rotate(60deg);
+  margin: 146px 0 0 0;
+}
+
+.longArrow3 {
+  transform: rotate(220deg);
+  margin: 50px 28px 0 0;
+}
+
+.longArrow4 {
+  transform: rotate(220deg);
+  margin: 100px 20px 0px -10px;
+}
+
+.longArrow5 {
+  transform: rotate(60deg);
+  margin: -55px 0 0 50px;
+}
+
+.lowerContainer .box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.upperContainer img:first-child {
+  margin: 173px 0 0 0;
+}
+
+.upperContainer img:nth-child(3) {
+  margin: 120px 30px 0 0;
+}
+
+.upperContainer img:nth-child(5) {
+  margin: 242px 0 0 -70px;
+}
+
+.firstImg {
+  margin: 0 20px 0 0;
+}
+
+.lowerContainer img:nth-child(3) {
+  margin: 50px 0 0 0;
+}
+
+/*---------------------------------------------FAQ---------------------------------*/
+
+.faq {
+  border: 2px solid #ef552f;
+}
+
+.wrapper h2 {
+  font-weight: bold;
+  font-size: 29px;
+  color: #ef552f;
+  text-align: center;
+  margin: 110px 0 30px 0;
+}
+
+.faq_block {
+  display: flex;
+  margin: 20px 0 30px 0;
+}
+
+.faq_title {
+  font-weight: bold;
+  font-size: 29px;
+}
+
+.faq_subtitle {
+  font-size: 20px;
+}
+
+.faq_icons img {
+  margin: 10px 35px 0 20px;
+}
+
+/*--------------------------------CONTACT FORM------------------------*/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_field .phone {
+  margin: 0 56px 90px 0;
+}
+
+.contact_field .contact-button {
+  margin: 0;
+}
+
+.contact_title {
+  font-weight: bold;
+  font-size: 29px;
+  color: #ef552f;
+  text-align: left;
+  margin: 45px auto 30px;
+  max-width: 640px;
+  line-height: 54px;
+}
+
+.contact_field {
+  align-self: center;
+}
+
+/*----------------------------------------FOOTER--------------------------------*/
+
+hr {
+  border-top: 3px solid #ef552f;
+  width: 95%;
+  margin: 0 auto 60px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  min-height: 255px;
+  margin-bottom: 200px;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column a {
+  margin: 0;
+  color: #000;
+}
+
+.column_left .logo {
+  margin: 0 0 30px 0;
+}
+
+.column_left {
+  align-items: center;
+  font-size: 20px;
+}
+
+.footer__column span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ef552f;
+  margin: 0 0 15px 0;
+}
