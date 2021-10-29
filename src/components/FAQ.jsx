@@ -1,6 +1,5 @@
 import React from "react";
 import plus from "../icons/plus.svg";
-import minus from "../icons/minus.svg";
 
 function FAQ () {
     return(<div className="wrapper">
