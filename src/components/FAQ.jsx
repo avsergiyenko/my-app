@@ -3,7 +3,7 @@ import plus from "../icons/plus.svg";
 
 function FAQ () {
     return(<div className="wrapper">
-        <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ:</h2>
+        <h2 className="faq_main_title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ:</h2>
         <div className="faq container">            
             <div className="faq_block">
                 <div className="faq_icons">

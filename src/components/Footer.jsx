@@ -25,8 +25,8 @@ function Footer() {
                 <span>Летняя коллекция</span>
                 <a href="#womenHats">Женские головные уборы</a>
                 <a href="#childHats">Детские головные уборы</a>
-                <a href="#mittings">Варежки</a>
-                <a href="#snood">Снуды</a>
+                <a href="#mittings">Сумки</a>
+                <a href="#snood">Топы и майки</a>
             </div>
         </div>
     </div>)
